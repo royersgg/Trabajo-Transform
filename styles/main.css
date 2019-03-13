@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css?family=Mina:400,700|Ubuntu:400,500,700');
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+}
+nav {
+    background-color: rgb(18, 193, 224);
+    text-align: center;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    position: relative;
+    color: white;
+    font-family: 'Mina', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 18px 22px;
+    display: grid;
+    transition: all .3s;
+    overflow: hidden;
+}
+nav ul li a:hover{
+    background-color: red;
+}
+nav ul li a div{
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    right: 12px;
+    bottom: 10px;
+    border: solid 2px;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all .3s;
+}
+.active {
+    background-color: red;
+}
+.active div{
+    opacity: 1;
+    transform: scale(1);
+}
+nav ul li a:hover div{
+    opacity: 1;
+    transform: scale(1);
+}
+ h1{
+  background-color: rgb(228, 10, 2);
+  text-align: center;
+  height: 80px;
+  padding-top: 60px;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+/* Estilos pagina 1*/
+section {
+  background-color: aqua;
+}
+section div{
+  padding: 80px 0;
+  margin: 0 auto;
+  width: fit-content;
+}
+section div article{
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+}
+section div article:first-child{
+  margin: 0px 93px 0px 45px;
+}
+section div article:last-child{
+  margin-right: 50px;
+}
+section div article aside{
+  position: absolute;
+  top:0;
+  width: 500px;
+  height: 350px;
+  text-align: center;
+  overflow: hidden;
+}
+.trans1 article aside{
+  background-color:rgba(22, 32, 187, .3)
+}
+div article aside h4{
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+}
+div article aside p{
+  padding: 0 60px;
+  color:white;
+  text-align: justify;
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+}
+div article aside a{
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+  color:white;
+  margin-top: 40px;
+  text-decoration: none;
+  padding: 15px 25px;
+  background-color: rgb(255, 242, 59);
+}
+/*Transsiciones 1*/
+.trans1 aside{
+  transform: scale(0);
+  transition: all .5s;
+}
+.trans1 article:hover aside{
+  transform: scale(1);
+}
+.trans1 img{
+  transition: all .5s;
+}
+.trans1 article:hover img{
+  transform: scale(1.2);
+}
+.trans1 h4{
+  transform: translateY(-80px);
+  opacity:0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.trans1 article:hover h4{
+  transform: translateY(0);
+  opacity:1;
+}
+.trans1 p{
+  transform: translateY(80px);
+  opacity:0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.trans1 article:hover p{
+  transform: translateY(0);
+  opacity:1;
+}
+.trans1 a{
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.trans1 article:hover a{
+  opacity: 1;
+}
+/*Estilo pagina 2*/
+h1{
+  background-color: rgb(228, 10, 2);
+  text-align: center;
+  height: 80px;
+  padding-top: 60px;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+section {
+  background-color: aqua;
+}
+section div{
+  padding: 80px 0;
+  margin: 0 auto;
+  width: fit-content;
+}
+section div article{
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+}
+section div article:first-child{
+  margin: 0px 93px 0px 45px;
+}
+section div article:last-child{
+  margin-right: 50px;
+}
+section div article aside{
+  position: absolute;
+  top:0;
+  width: 500px;
+  height: 350px;
+  text-align: center;
+  overflow: hidden;
+}
+.trans2 article aside{
+  background-color:rgba(48, 228, 168, 0.3)
+}
+div article aside h4{
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+}
+div article aside p{
+  padding: 0 60px;
+  color:white;
+  text-align: justify;
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+}
+div article aside a{
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+  color:white;
+  margin-top: 40px;
+  text-decoration: none;
+  padding: 15px 25px;
+  background-color: rgb(255, 242, 59);
+}
+/*Transiciones 2*/
+.trans2 aside{
+  transform: rotate(90deg) translate(425px,-425px) ;
+  transition: all .5s;
+}
+.trans2 article:hover aside{
+  transform: rotate(0) translate(0);
+}
+.trans2 h4{
+  transform:translate(500px,-80px);
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.trans2 article:hover h4{
+  transform: translate(0);
+}
+.trans2 p{
+  transform: translate(-500px,100px);
+  opacity:0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.trans2 article:hover p{
+  transform: translate(0);
+  opacity:1;
+}
+.trans2 a{
+  transform: translateY(80px);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.trans2 article:hover a{
+  transform: translateY(0);
+  opacity: 1;
+}
+/*Estilo pagina 3*/
+h1{
+  background-color: rgb(228, 10, 2);
+  text-align: center;
+  height: 80px;
+  padding-top: 60px;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+section {
+  background-color: aqua;
+}
+section div{
+  padding: 80px 0;
+  margin: 0 auto;
+  width: fit-content;
+}
+section div article{
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+}
+section div article:first-child{
+  margin: 0px 93px 0px 45px;
+}
+section div article:last-child{
+  margin-right: 50px;
+}
+section div article aside{
+  position: absolute;
+  top:0;
+  width: 500px;
+  height: 350px;
+  text-align: center;
+  overflow: hidden;
+}
+.trans3 article aside{
+  background-color:rgba(228, 75, 48, 0.3)
+}
+div article aside h4{
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+}
+div article aside p{
+  padding: 0 60px;
+  color:white;
+  text-align: justify;
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+}
+div article aside a{
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+  color:white;
+  margin-top: 40px;
+  text-decoration: none;
+  padding: 15px 25px;
+  background-color: rgb(255, 242, 59);
+}
+/*Transiciones 3*/
+.trans3 aside{
+  transform: rotate(90deg) translate(-425px,-425px) ;
+  transition: all .5s;
+}
+.trans3 article:hover aside{
+  transform: rotate(0) translate(0);
+}
+.trans3 img{
+  transition: all .5s;
+}
+.trans3 article:hover img{
+  transform: scale(1.2) rotate(-6deg);
+} 
+.trans3 h4{
+  transform: rotate(-90deg) translate(310px,-265px);
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.trans3 article:hover h4{
+  transform: translate(0) rotate(0);
+}
+.trans3 p{
+  transform: rotate(90deg) translate(-400px,-300px);
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.trans3 article:hover p{
+  transform: translate(0) rotate(0);
+}
+.trans3 a{
+  transform: translateY(-200px);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.trans3 article:hover a{
+  transform: translate(0);
+  opacity: 1;
+}
+/*Estilo pagina 4*/
+h1{
+  background-color: rgb(228, 10, 2);
+  text-align: center;
+  height: 80px;
+  padding-top: 60px;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+section {
+  background-color: aqua;
+}
+section div{
+  padding: 80px 0;
+  margin: 0 auto;
+  width: fit-content;
+}
+section div article{
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+}
+section div article:first-child{
+  margin: 0px 93px 0px 45px;
+}
+section div article:last-child{
+  margin-right: 50px;
+}
+section div article aside{
+  position: absolute;
+  top:0;
+  width: 500px;
+  height: 350px;
+  text-align: center;
+  overflow: hidden;
+}
+.trans4 article aside{
+  background-color:rgba(48, 228, 63, 0.3)
+}
+div article aside h4{
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+}
+div article aside p{
+  padding: 0 60px;
+  color:white;
+  text-align: justify;
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+}
+div article aside a{
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+  color:white;
+  margin-top: 40px;
+  text-decoration: none;
+  padding: 15px 25px;
+  background-color: rgb(255, 242, 59);
+}
+/* Transiciones 4*/
+.trans4 aside{
+  transform: rotate(720deg) scale(0) ;
+  transition: all .5s;
+}
+.trans4 article:hover aside{
+  transform: rotate(0) scale(1);
+}
+.trans4 img{
+  transform: scale(1);
+  transition: all .5s;
+}
+.trans4 article:hover img{
+  transform: scale(1.3);
+} 
+.trans4 h4{
+  transform: translateX(500px);
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.trans4 article:hover h4{
+  transform: translateX(0);
+}
+.trans4 p{
+  transform: translateX(-500px);
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.trans4 article:hover p{
+  transform: translateX(0);
+}
+.trans4 a{
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.trans4 article:hover a{
+  transform: translate(0);
+  opacity: 1;
+}
+/*Estilo pagina 5*/
+h1{
+  background-color: rgb(228, 10, 2);
+  text-align: center;
+  height: 80px;
+  padding-top: 60px;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+section {
+  background-color: aqua;
+}
+section div{
+  padding: 80px 0;
+  margin: 0 auto;
+  width: fit-content;
+}
+section div article{
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+}
+section div article:first-child{
+  margin: 0px 93px 0px 45px;
+}
+section div article:last-child{
+  margin-right: 50px;
+}
+section div article aside{
+  position: absolute;
+  top:0;
+  width: 500px;
+  height: 350px;
+  text-align: center;
+  overflow: hidden;
+}
+.trans5 article aside{
+  background-color:rgba(197, 36, 44, 0.3)
+}
+div article aside h4{
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+}
+div article aside p{
+  padding: 0 60px;
+  color:white;
+  text-align: justify;
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+}
+div article aside a{
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+  color:white;
+  margin-top: 40px;
+  text-decoration: none;
+  padding: 15px 25px;
+  background-color: rgb(255, 242, 59);
+}
+/*Transciciones 5*/
+.trans5 aside{
+  transform: translate(-500px,350px) ;
+  transition: all .5s;
+}
+.trans5 article:hover aside{
+  transform: translate(0);
+}
+.trans5 h4{
+  transform: scale(0) rotate(720deg);
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.trans5 article:hover h4{
+  transform: scale(1) rotate(0);
+}
+.trans5 p{
+  transform: translate(-500px,150px);
+  transition: all .5s;
+  transition-delay: 1s;
+}
+.trans5 article:hover p{
+  transform: translate(0);
+}
+.trans5 a{
+  transform: scale(0) rotate(720deg);
+  transition: all .5s;
+  transition-delay: 1s;
+}
+.trans5 article:hover a{
+  transform: scale(1) rotate(0);
+}
+/*Estilo pagina 6*/
+h1{
+  background-color: rgb(228, 10, 2);
+  text-align: center;
+  height: 80px;
+  padding-top: 60px;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+section {
+  background-color: aqua;
+}
+section div{
+  padding: 80px 0;
+  margin: 0 auto;
+  width: fit-content;
+}
+section div article{
+  position: relative;
+  display: inline-block;
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+}
+section div article:first-child{
+  margin: 0px 93px 0px 45px;
+}
+section div article:last-child{
+  margin-right: 50px;
+}
+section div article aside{
+  position: absolute;
+  top:0;
+  width: 500px;
+  height: 350px;
+  text-align: center;
+  overflow: hidden;
+}
+.trans6 article aside{
+  background-color:rgb(1, 197, 138)
+}
+div article aside h4{
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+}
+div article aside p{
+  padding: 0 60px;
+  color:white;
+  text-align: justify;
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+}
+div article aside a{
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+  color:white;
+  margin-top: 40px;
+  text-decoration: none;
+  padding: 15px 25px;
+  background-color: rgb(255, 242, 59);
+}
+/* Transiciones 6*/
+.trans6 aside{
+  transform: scale(0);
+  transition: all .3s;
+}
+.trans6 article:hover aside{
+  transform: scale(1);
+}
+.trans6 img{
+  opacity: 1;
+  transform: scale(1);
+  transition: all .5s;
+}
+.trans6 article:hover img{
+  transform: scale(2);
+  opacity: 0;
+}
+.trans6 h4{
+  transform: scale(0);
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.trans6 article:hover h4{
+  transform: scale(1);
+}
+.trans6 p{
+  transform: scale(0);
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.trans6 article:hover p{
+  transform: scale(1);
+}
+.trans6 a{
+  transform: scale(0) rotate(720deg);
+  transition: all .5s;
+  transition-delay: .5s;
+}
+.trans6 article:hover a{
+  transform: scale(1) rotate(0);
+}
